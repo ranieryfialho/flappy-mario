@@ -23,7 +23,8 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.5s infinite linear;
+    --pipe-speed: 1.5s;
+    animation: pipe-animation var(--pipe-speed) infinite linear;
 }
 
 .mario {
@@ -118,6 +119,38 @@
 
 .start-screen button:hover {
     background-color: #e06055;
+}
+
+.info-footer {
+    position: fixed;
+    left: 0; 
+    bottom: 0;     
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    z-index: 200;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.info-footer h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.info-footer p {
+    margin: 0;
+}
+
+.info-footer .disclaimer {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
 }
 
 @keyframes mario-running {

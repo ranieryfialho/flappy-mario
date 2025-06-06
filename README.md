@@ -5,11 +5,6 @@
 
 Um clone do popular jogo Flappy Bird, desenvolvido com HTML, CSS e JavaScript puros, utilizando a temática do Super Mario. Este projeto foi criado como um exercício prático para aprimorar habilidades em manipulação do DOM, animações CSS e lógica de jogo responsiva.
 
-### 📸 Gameplay
-*(Dica: Grave um GIF curto da sua jogabilidade e adicione aqui! Isso valoriza muito o projeto. Exemplo de como adicionar: `![Gameplay do Flappy Mario](./gameplay.gif)`)*
-
-![Flappy Mario Screenshot](https://i.imgur.com/gK2WbL7.png)
-
 ---
 
 ## ✨ Funcionalidades

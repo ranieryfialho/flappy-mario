@@ -40,7 +40,7 @@ Este é um projeto web estático, não necessitando de um processo de *build* ou
 
 1.  **Clone o repositório** (se estiver no GitHub):
     ```bash
-    git clone [https://github.com/](https://github.com/)[SEU-USUARIO]/[NOME-DO-REPOSITORIO].git
+    git clone https://github.com/ranieryfialho/flappy-mario.git
     ```
 2.  **Navegue até a pasta** do projeto:
     ```bash

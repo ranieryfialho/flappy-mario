@@ -44,7 +44,7 @@ Este é um projeto web estático, não necessitando de um processo de *build* ou
     ```
 2.  **Navegue até a pasta** do projeto:
     ```bash
-    cd [NOME-DO-REPOSITORIO]
+    cd flappy-mario
     ```
 3.  **Abra o arquivo `index.html`** diretamente no seu navegador de preferência.
 
@@ -71,10 +71,6 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE.md` para mais det
 As imagens e personagens da franquia Super Mario são propriedade intelectual da Nintendo©. Este projeto é uma homenagem e não possui fins comerciais.
 
 ---
-
-<div align="center">
-  Feito com ❤️ por <strong>[SEU NOME]</strong>
-</div>
 
 <div align="center">
   <a href="[[LINK-PARA-SEU-GITHUB](https://github.com/ranieryfialho)]">GitHub</a> •

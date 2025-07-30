@@ -14,6 +14,8 @@ Um clone do popular jogo Flappy Bird, desenvolvido com HTML, CSS e JavaScript pu
 * **Ciclo de Jogo Completo:** Tela inicial para começar, detecção de colisão, tela de "Game Over" e botão para reiniciar instantaneamente sem recarregar a página.
 * **Interface Completa:** Inclui tela de início, área de jogo e um rodapé informativo com instruções e um aviso de direitos autorais.
 * **Animações Puras:** Todas as animações (personagem, canos, nuvens) foram criadas com `@keyframes` do CSS.
+* **Pontuação em Tempo Real:** O sistema de score exibe a pontuação atual em tempo real, somando pontos a cada obstáculo ultrapassado.
+* **Efeitos Sonoros:**Inclui sons de pontuação, de GameOver e Música de fundo para aumentar a imersão do jogador.
 
 ---
 

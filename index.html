@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Mario</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./js/index.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/mariofav.png" type="image/x-icon">
+  <title>Flappy Mario</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script defer src="./js/index.js"></script>
 </head>
-
 <body>
-    <div class="start-screen">
-        <img src="./img/clouds.png" class="clouds start-clouds">
-        <img src="./img/mario.gif" class="mario start-mario">
-        <button onclick="startGame()">Iniciar Jogo</button>
+
+  <div class="start-screen">
+    <img src="./img/mario.gif" alt="Mario" class="start-mario" />
+    <button onclick="startGame()">Iniciar Jogo</button>
+
+    <div class="start-info">
+      <p><strong>Como Jogar:</strong><br>
+        Pressione qualquer tecla no PC ou toque na tela para fazer o Mario pular e desviar dos canos.
+      </p>
+      <p class="warning">
+        Atenção: Este é um projeto desenvolvido para fins de estudo e para compor meu portfólio.<br>
+        A inspiração e o conceito são baseados no clássico "Flappy Bird".<br>
+        As imagens e personagens são propriedades intelectuais da Nintendo©.
+      </p>
+      <p class="site-link">
+        🔗 <a href="https://ranieryfialho.github.io/flappy-mario/" target="_blank">https://flappy-mario.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="game-board">
+    <div id="score" class="score">Score: 0</div>
+
+    <img src="./img/clouds.png" class="clouds" />
+    <img src="./img/mario.gif" class="mario" />
+    <img src="./img/pipe.png" class="pipe" />
+
+    <div class="game-over">
+      <h2>Game Over</h2>
+      <button onclick="restartGame()">Reiniciar</button>
+      <button onclick="MenuGame()">Voltar para o menu</button>
     </div>
 
-    <div class="game-board">
-        <img src="./img/clouds.png" class="clouds">
-        <img src="./img/mario.gif" class="mario">
-        <img src="./img/pipe.png" class="pipe">
+    <audio id="bgm" loop>
+      <source src="./sounds/lofi.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="point-sound" src="./sounds/jump.mp3" preload="auto"></audio>
+    <audio id="gameover-sound" src="./sounds/fail.mp3" preload="auto"></audio>
 
-        <div class="game-over">
-            <h2>Game Over</h2>
-            <button onclick="restartGame()">Reiniciar</button>
-        </div>
-
-        <div class="info-footer">
-            <h3>Como Jogar</h3>
-            <p>Pressione qualquer tecla, se estiver no PC, ou toque na tela, para fazer o Mario pular e desviar dos canos.</p>
-            <p class="disclaimer">
-                <strong>Atenção:</strong> Este é um projeto desenvolvido para fins de estudo e para compor meu portfólio. A inspiração e o conceito são baseado no clássico jogo do "Flappy Bird". As imagens e personagens são propriedae intelectual da Nintendo&copy;.
-            </p>
-        </div>
-    </div>
+    <button id="toggle-audio" class="audio-toggle">🔈 Som ligado</button>
+  </div>
 
 </body>
-
 </html>
